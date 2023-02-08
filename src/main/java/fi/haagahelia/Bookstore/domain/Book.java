@@ -11,7 +11,7 @@ public class Book {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	private Long id;
+	private long id;
 	
 	private String title, author, isbn;
 	private int publicationYear;
@@ -29,6 +29,13 @@ public class Book {
 		this.isbn = isbn;
 		this.publicationYear = publicationYear;
 		this.price = price;
+	}
+	
+	public long getId() {
+		return id;
+	}
+	public void setId(long id) {
+		this.id = id;
 	}
 	
 	public String getTitle() {
